@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#f9ce78"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/back"
+            android:text="返回"
+            android:background="@null"
+            android:padding="2dp"
+            android:textSize="17dp"
+            android:textColor="#535353"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/title"
+            android:text="简易日记本"
+            android:textSize="20dp"
+            android:textColor="#535353"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 删除只有在查看的情况进入才显示出来 -->
+        <Button
+            android:text="删除"
+            android:visibility="gone"
+            android:id="@+id/delete"
+            android:layout_toLeftOf="@+id/send"
+            android:background="@null"
+            android:textSize="17dp"
+            android:textColor="#535353"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="提交"
+            android:id="@+id/send"
+            android:background="@null"
+            android:textSize="17dp"
+            android:textColor="#535353"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/inputTitle"
+            android:hint="请输入日记标题"
+            android:textSize="19dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="#f9ce78"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <EditText
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/content"
+            android:gravity="top"
+            android:layout_marginTop="15dp"
+            android:hint="请输入日记内容"
+            android:textSize="19dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

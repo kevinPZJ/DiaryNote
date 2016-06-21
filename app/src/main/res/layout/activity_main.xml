@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.note.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:background="#f9ce78"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="简易日记本"
+            android:textSize="20dp"
+            android:textColor="#535353"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="新建"
+            android:id="@+id/send"
+            android:background="@null"
+            android:padding="2dp"
+            android:textSize="17dp"
+            android:textColor="#535353"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+
+</LinearLayout>
